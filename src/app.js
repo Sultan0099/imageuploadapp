@@ -7,7 +7,7 @@ const multer = require("multer");
 // databse config
 mongoose
   .connect(
-    "mongodb+srv://syedsultan:123098@cluster0-pgsyx.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb+srv://syedsultan:123098@cluster0-pgsyx.mongodb.net/imagegallery?retryWrites=true&w=majority",
     { useNewUrlParser: true }
   )
   .then(_ => console.log("databse is  connected"))
