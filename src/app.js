@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes/index");
-const multer = require("multer");
 // databse config
 mongoose
   .connect(
