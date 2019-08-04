@@ -35,7 +35,13 @@ uploadBtn.onclick = function() {
 window.onload = function() {
   fetch("/image", {})
     .then(res => res.json())
-    .then(images => appendImages(images))
+    .then(images => {
+      if (!images) {
+        imageContainer.innerHTML = "no image";
+      } else {
+        return appendImages(images);
+      }
+    })
     .catch(err => console.log(err));
 };
 
