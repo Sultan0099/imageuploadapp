@@ -46,7 +46,6 @@ window.onload = function() {
 };
 
 function appendImages(images) {
-  console.log(images);
   // imageContainer.innerHTML = images.map(image => {
   //   return `<figure id=${image._id}><a href=${
   //     image.path
