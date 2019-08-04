@@ -6,7 +6,10 @@ const routes = require("./routes/index");
 const multer = require("multer");
 // databse config
 mongoose
-  .connect("mongodb://localhost:27017/imagegallery", { useNewUrlParser: true })
+  .connect(
+    "mongodb+srv://syedsultan:123098@cluster0-pgsyx.mongodb.net/test?retryWrites=true&w=majority",
+    { useNewUrlParser: true }
+  )
   .then(_ => console.log("databse is  connected"))
   .catch(err => console.log(err));
 
