@@ -5,10 +5,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes/index");
 // databse config
 mongoose
-  .connect(
-    "mongodb+srv://syedsultan:123098@cluster0-pgsyx.mongodb.net/imagegallery?retryWrites=true&w=majority",
-    { useNewUrlParser: true }
-  )
+  .connect("mongodb://localhost:27017/imagegallery", { useNewUrlParser: true })
   .then(_ => console.log("databse is  connected"))
   .catch(err => console.log(err));
 
